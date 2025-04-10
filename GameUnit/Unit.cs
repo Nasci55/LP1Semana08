@@ -1,3 +1,6 @@
+using System;
+using Humanizer;
+
 namespace GameUnit
 {
     public abstract class Unit
@@ -13,8 +16,8 @@ namespace GameUnit
 
         private void Move(int movement)
         {
-
+            System.Console.WriteLine(movement.ToRoman());
         }
-        public float cost { get; }
+        public virtual float cost { get; }
     }
 }
