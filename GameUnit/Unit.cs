@@ -1,4 +1,5 @@
 using System;
+using System.Reflection.PortableExecutable;
 using Humanizer;
 
 namespace GameUnit
@@ -19,5 +20,13 @@ namespace GameUnit
             System.Console.WriteLine(movement.ToRoman());
         }
         public virtual float cost { get; }
+
+        private string unitType;
+
+        public virtual string ToString()
+        {
+
+        }
+
     }
 }
